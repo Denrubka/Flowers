@@ -159,7 +159,7 @@ body {
   position: relative;
 }
 .review-image-1 {
-  background-image: url("/images/review/review-1.png");
+  background-image: url("../images/review/review-1.png");
 }
 .review-text {
   text-align: left;
@@ -367,6 +367,9 @@ body {
   font-weight: 400;
   color: #101010;
   margin-left: 5px;
+}
+.modal {
+  display: none;
 }
 .modal-title {
   color: #292929;
