@@ -1,0 +1,511 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Light";
+  src: url("../fonts/GothamPro-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #292929;
+  color: #fff;
+  font-family: "Gotham Pro", sans-serif;
+  margin: 0;
+}
+.header {
+  padding-top: 50px;
+}
+.header-description {
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.12px;
+}
+.header-contacts {
+  text-align: right;
+}
+.text-color-red {
+  font-family: "Gotham Pro Medium";
+  color: #ff3469;
+}
+.header-phone {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+.header-info {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.callback {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ff3469;
+  margin-top: 16px;
+}
+.hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 33px;
+  max-width: 652px;
+}
+.hero-description {
+  font-family: "Gotham Pro Light";
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 87px;
+  max-width: 552px;
+  margin: auto;
+}
+.flowers-slider {
+  width: 100%;
+  margin-top: 87px;
+  margin-bottom: 67px;
+}
+:root {
+  --swiper-navigation-size: 19px;
+}
+.hero-cta {
+  display: block;
+  font-family: "Gotham Pro Light";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.button {
+  display: inline-block;
+  color: #fff;
+  background-color: #ff2e55;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 36px;
+  padding: 30px 65px 26px 65px;
+  cursor: pointer;
+  border: none;
+}
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.review-slider {
+  margin-top: 96px;
+}
+.review-slide {
+  padding-left: 60px;
+  padding-right: 86px;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.section-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+.review-image {
+  font-family: "Gotham Pro Light";
+  font-size: 20px;
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 52px;
+  position: relative;
+}
+.review-image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.review-image > * {
+  position: relative;
+}
+.review-image-1 {
+  background-image: url("/images/review/review-1.png");
+}
+.review-text {
+  text-align: left;
+}
+.review {
+  font-size: 18px;
+  font-weight: 400;
+}
+.review-link {
+  color: #f24841;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+}
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 102px;
+  text-align: center;
+  border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+  min-height: 80px;
+  margin-bottom: 30px;
+}
+.advantages-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 270px;
+  margin: auto;
+}
+.goods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.text-red {
+  color: #ff1844;
+}
+.card {
+  border: 3px solid #ffffff;
+  padding: 33px 35px 30px 35px;
+  margin-top: 77px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+.card-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+.color-label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.color-input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -9;
+}
+.color-label.white {
+  background-color: #fff;
+}
+.color-label.beige {
+  background-color: #f7b496;
+}
+.color-label.pink {
+  background-color: #ed366e;
+}
+.color-label.red {
+  background-color: #ff0000;
+}
+.color-label.blue {
+  background-color: #12129d;
+}
+.counter-input {
+  border: 2px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #292929;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.card-button {
+  padding: 16px 26px 13px 26px;
+  background-color: #f24841;
+  font-size: 14px;
+}
+.counter-button {
+  width: 100%;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}
+.more {
+  display: block;
+  margin-top: 39px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f24841;
+}
+.more:after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  display: inline-block;
+  background: url("../images/caret.svg") no-repeat center;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.offer {
+  background-color: #1a1a1a;
+  padding-top: 100px;
+  padding-bottom: 84px;
+}
+.offer-link {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+.offer-label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+.offer-phone {
+  color: #fff;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 400;
+}
+.footer-top {
+  padding-top: 50px;
+  padding-bottom: 49px;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 33px;
+}
+.footer-menu-item {
+  margin-right: 35px;
+}
+.footer-menu-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.footer-social {
+  font-size: 16px;
+  font-weight: 400;
+}
+.social-link {
+  margin-left: 20px;
+}
+.footer-label {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-phone {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+.work-time {
+  text-align: right;
+}
+.footer-bottom {
+  background-color: #fff;
+  padding-top: 38px;
+  padding-bottom: 50px;
+}
+.footer-description {
+  color: #292929;
+}
+.footer-info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #101010;
+  text-align: right;
+}
+.footer-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: #101010;
+  margin-left: 5px;
+}
+.modal-title {
+  color: #292929;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+.modal-button {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header-contacts {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-title {
+    font-size: 23px;
+  }
+  .hero-description {
+    font-size: 14px;
+  }
+  .reviews {
+    padding-top: 50px;
+  }
+  .review-image {
+    font-size: 14px;
+    width: 150px;
+    height: 150px;
+  }
+  .review {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .advantages-title {
+    font-size: 16px;
+  }
+  .offer {
+    padding-top: 50px;
+  }
+  .offer-link {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    text-align: center;
+  }
+  .footer-info {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .hero-cta {
+    font-size: 17px;
+  }
+  .review-slide {
+    flex-direction: column;
+  }
+  .review-image {
+    margin-right: 0;
+  }
+  .review-slide {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .review-text {
+    text-align: center;
+  }
+  .advantages-title {
+    font-size: 12px;
+  }
+  .advantages-wrapper {
+    margin-bottom: 10px;
+  }
+  .advantages-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .goods {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .offer {
+    padding-bottom: 50px;
+  }
+  .offer-link {
+    font-size: 20px;
+  }
+  .offer-phone {
+    font-size: 30px;
+  }
+  .footer-menu-link {
+    font-size: 14px;
+  }
+  .footer-social {
+    font-size: 14px;
+  }
+  .footer-phone {
+    font-size: 22px;
+  }
+}
+@media (max-width: 414px) {
+  .button {
+    font-size: 14px;
+    padding: 15px 30px;
+  }
+  .advantages-title {
+    font-size: 10px;
+  }
+  .offer-link {
+    font-size: 16px;
+  }
+  .work-time {
+    text-align: center;
+  }
+  .footer-top {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .section-description {
+    font-size: 14px;
+  }
+  .offer-link {
+    font-size: 12px;
+  }
+  .offer-phone {
+    font-size: 22px;
+  }
+}
